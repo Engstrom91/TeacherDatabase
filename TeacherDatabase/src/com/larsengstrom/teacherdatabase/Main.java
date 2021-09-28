@@ -13,13 +13,7 @@ public class Main {
         Database database = new Database();
         List<Teacher> teachers = Database.initDatabase();
 
-
-
-        //None match, returns true if no item matches the value. Do we not have any uncertified teachers?
-        boolean tom = teachers.stream()
-                .noneMatch(teacher -> teacher.getName().equals("Zelda Brown"));
-        //System.out.println(tom);
-
+            //This loop provides the user interface for this application.
             while(true) {
                 System.out.println("\n Welcome to the teacher database. What would you like to do? \n(0) Show all junior teachers (1) Sort teachers by age (2) Check for uncertified teachers " +
                         "(3) Check that we have at least one senior teacher (4) Group teachers by experience level");

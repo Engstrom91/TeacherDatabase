@@ -5,7 +5,7 @@ public class Teacher {
     private final int age;
     private final boolean certified;
     private final ExperienceLevel experienceLevel;
-
+    //This class defines the teacher. It can be modified depending on the needs of the school that will use the application.
     public Teacher(String name, int age, boolean certified, ExperienceLevel experienceLevel) {
         this.name = name;
         this.age = age;
